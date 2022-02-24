@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(135deg, #FBAB7E 14%, #F7CE68 67%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  color: tomato;
+  text-align: center;
+}
+
+.form-div {
+  text-align: center;
+  display: inline-block;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form ul {
+  list-style-type: none;
+}
+
+.notActive {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
