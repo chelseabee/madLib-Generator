@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hey There!</h1>
-    <h2>Fill in the answers to make a MadLib</h2>
-    <div class="form-div">
-    <form>
+    <h1>MadLib Generator</h1>
+    <div class="formDiv" id="formDiv">
+
+        <h2>Fill in each answer to make your MadLib</h2>
+        <div class="flex-container">
         <ul>
         <li class="active">
-        <label>Noun</label>
-        <input id = "nn1" type="text">
+        <label>Adjective</label>
+        <input class="userInput" id = "adj1" type="text">
         <button id= "next-btn" type="button">Next</button>
         </li>
+        <li class="notActive">
+            <label>Noun</label>
+            <input id = "nn1" type="text">
+            <button id= "next-btn" type="button">Next</button>
+            </li>
         <li class="notActive">
         <label>Verb</label>
         <input id = "vb1" type="text">
@@ -29,17 +35,17 @@
         <button id= "next-btn" type="button">Next</button>
         </li>
         <li class="notActive">
-        <label>Adjective</label>
-        <input id = "adj2" type="text">
-        <button id= "next-btn" type="button">Next</button>
-        </li>
+            <label>Adjective</label>
+            <input id = "adj2" type="text">
+            <button id= "next-btn" type="button">Next</button>
+            </li>
         <li class="notActive">
-        <label>noun</label>
+        <label>Noun</label>
         <input id = "nn2" type="text">
         <button id= "next-btn" type="button">Next</button>
         </li>
         <li class="notActive">
-        <label>noun</label>
+        <label>Noun</label>
         <input id = "nn3" type="text">
         <button id= "next-btn" type="button">Next</button>
         </li>
@@ -60,6 +66,7 @@
         </li>
         <li class="notActive">
         <label>Verb (past tense)</label>
+        <input id = "vb3" type="text">
         <button id= "next-btn" type="button">Next</button>
         </li>
         <li class="notActive">
@@ -67,10 +74,10 @@
         <input id = "adj4" type="text">
         <button id= "submit-btn" type="button">Submit Your Answers</button>
         </li>
-    </ul>
-    </form>
+    </ul>  
 </div>
-    <section id="display-finished-lib">
+</div>
+    <section id="display-finished-lib" class="notActive">
     </section>
     
 <script src="app.js"></script>    
